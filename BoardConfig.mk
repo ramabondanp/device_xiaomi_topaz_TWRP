@@ -25,15 +25,15 @@ ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
 # Bootloader
-PRODUCT_PLATFORM := kalama
-TARGET_BOOTLOADER_BOARD_NAME := fuxi
+PRODUCT_PLATFORM := bengal
+TARGET_BOOTLOADER_BOARD_NAME := topaz
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
 # Platform
-TARGET_BOARD_PLATFORM := xiaomi_sm8550
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno740
-QCOM_BOARD_PLATFORMS += xiaomi_sm8550
+TARGET_BOARD_PLATFORM := xiaomi_sm6225
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
+QCOM_BOARD_PLATFORMS += xiaomi_sm6225
 #BOARD_USES_QCOM_HARDWARE := true
 
 # Kernel
@@ -142,7 +142,7 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_MAX_BRIGHTNESS := 2047
 TW_EXTRA_LANGUAGES := true
-TW_DEFAULT_LANGUAGE := zh_CN
+TW_DEFAULT_LANGUAGE := en
 TW_DEFAULT_BRIGHTNESS := 200
 TW_EXCLUDE_APEX := true
 TW_HAS_EDL_MODE := true
@@ -152,8 +152,8 @@ TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME := "IVibrator/vibratorfeature"
 TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 #TW_NO_SCREEN_BLANK := true
-TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko fts_touch_spi.ko qti_battery_charger.ko"
+TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko focaltech_ts_i2c.ko qti_battery_charger.ko"
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone35/temp"
 TW_BATTERY_SYSFS_WAIT_SECONDS := 6
 TW_BACKUP_EXCLUSIONS := /data/fonts
-TW_DEVICE_VERSION := Xiaomi_13-A13
+TW_DEVICE_VERSION := RN12-A13
