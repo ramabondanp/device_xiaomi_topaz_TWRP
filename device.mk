@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Configure core_64_bit_only.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
+
 # Configure Virtual A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
